@@ -1,0 +1,485 @@
+{
+    "userInfo": {
+        "baseUrl": "https://deployments.hubgroup.com/",
+        "userName": "",
+        "email": "",
+        "objectId": "",
+        "appToken": "",
+        "crumb": ""
+    },
+    "previousJobRun": {
+        "pipeLineName": "OrderManagement1_om-order-details-app_Multibranch_Pipeline_OpenShift",
+        "repoName": "om-order-details-app",
+        "branchName": "feature/pre-develop",
+        "branchOption": "feature%2Fpre-develop"
+    },
+    "excludePipeLinesForCommits": [
+        "OpenShift-List-Deployments"
+    ],
+    "excludedPipeLines": [
+        "OpenShift-Promotions",
+        "OpenShift-Bulk-Promotions",
+        "OpenShift-List-Deployments",
+        "bulk-tags",
+        "update-repo-branches",
+        "run-previous-job",
+        "exit"
+    ],
+    "pipeLineList": [
+        {
+            "name": "OrderManagement1_om-order-details-app_Multibranch_Pipeline_OpenShift",
+            "repo": "om-order-details-app"
+        },
+        {
+            "name": "OrderManagement1_om-order-filter_Multibranch_Pipeline_OpenShift",
+            "repo": "om-order-filter"
+        },
+        {
+            "name": "OrderManagement1_om-processor_Multibranch_Pipeline_OpenShift",
+            "repo": "om-processor"
+        },
+        {
+            "name": "OrderManagement1_om-team-assignment-customer_Multibranch_Pipeline_OpenShift",
+            "repo": "om-team-assignment-customer"
+        },
+        {
+            "name": "OrderManagement1_om-team-assignment-processor_Multibranch_Pipeline_OpenShift",
+            "repo": "om-team-assignment-processor"
+        },
+        {
+            "name": "OrderManagement1_order-management-api_Multibranch_Pipeline_OpenShift",
+            "repo": "order-management-api"
+        },
+        {
+            "name": "OrderManagement2_om-audit-processor_Multibranch_Pipeline_OpenShift",
+            "repo": "om-audit-processor"
+        },
+        {
+            "name": "OrderManagement2_om-customs-brokers_Multibranch_Pipeline_OpenShift",
+            "repo": "om-customs-brokers"
+        },
+        {
+            "name": "OrderManagement2_om-edi-acceptance-processor_Multibranch_Pipeline_OpenShift",
+            "repo": "om-edi-acceptance-processor"
+        },
+        {
+            "name": "OrderManagement2_om-edi-acknowledgement_Multibranch_Pipeline_OpenShift",
+            "repo": "om-edi-acknowledgement"
+        },
+        {
+            "name": "OrderManagement2_om-edi-mapping_Multibranch_Pipeline_OpenShift",
+            "repo": "om-edi-mapping"
+        },
+        {
+            "name": "OrderManagement2_om-edi-order-ack-processor_Multibranch_Pipeline_OpenShift",
+            "repo": "om-edi-order-ack-processor"
+        },
+        {
+            "name": "OrderManagement2_om-edi-order-processor_Multibranch_Pipeline_OpenShift",
+            "repo": "om-edi-order-processor"
+        },
+        {
+            "name": "OrderManagement2_om-edi-order_Multibranch_Pipeline_OpenShift",
+            "repo": "om-edi-order"
+        },
+        {
+            "name": "OrderManagement2_om-edi-rule-engine_Multibranch_Pipeline_OpenShift",
+            "repo": "om-edi-rule-engine"
+        },
+        {
+            "name": "OrderManagement2_om-edi-rule-processor_Multibranch_Pipeline_OpenShift",
+            "repo": "om-edi-rule-processor"
+        },
+        {
+            "name": "OrderManagement2_om-edi-rules_Multibranch_Pipeline_OpenShift",
+            "repo": "om-edi-rules"
+        },
+        {
+            "name": "OrderManagement2_om-edi-settings_Multibranch_Pipeline_OpenShift",
+            "repo": "om-edi-settings"
+        },
+        {
+            "name": "OrderManagement2_om-oc-template_Multibranch_Pipeline_OpenShift",
+            "repo": "om-oc-template"
+        },
+        {
+            "name": "OrderManagement2_om-order-create-processor_Multibranch_Pipeline_OpenShift",
+            "repo": "om-order-create-processor"
+        },
+        {
+            "name": "OrderManagement2_om-order-create_Multibranch_Pipeline_OpenShift",
+            "repo": "om-order-create"
+        },
+        {
+            "name": "OrderManagement2_om-order-entry-app_Multibranch_Pipeline_OpenShift",
+            "repo": "om-order-entry-app"
+        },
+        {
+            "name": "OrderManagement2_om-order-processor_Multibranch_Pipeline_OpenShift",
+            "repo": "om-order-processor"
+        },
+        {
+            "name": "OrderManagement2_om-order_Multibranch_Pipeline_OpenShift",
+            "repo": "om-order"
+        },
+        {
+            "name": "OrderManagement2_order-actions-addin_Multibranch_Pipeline_OpenShift",
+            "repo": "order-actions-addin"
+        },
+        {
+            "name": "SharedServices_om-app_Multibranch_Pipeline_OpenShift",
+            "repo": "om-app"
+        },
+        {
+            "name": "SharedServices_om-maintenance-app_Multibranch_Pipeline_OpenShift",
+            "repo": "om-maintenance-app"
+        },
+        {
+            "name": "OpenShift-List-Deployments",
+            "repo": "OpenShift List Deployments"
+        },
+        {
+            "name": "OpenShift-Promotions",
+            "repo": "OpenShift Promotions"
+        },
+        {
+            "name": "OpenShift-Bulk-Promotions",
+            "repo": "OpenShift Bulk Promotions"
+        },
+        {
+            "name": "update-repo-branches",
+            "repo": "Update repo branches"
+        },
+        {
+            "name": "bulk-tags",
+            "repo": "Get Tags of multiple micro services"
+        },
+        {
+            "name": "run-previous-job",
+            "repo": "Run Previous Job"
+        },
+        {
+            "name": "exit",
+            "repo": "Exit"
+        }
+    ],
+    "bulkTags": {
+        "om-order-details-app": {
+            "branches": [
+                {
+                    "name": "Pre Develop",
+                    "raw": "feature%2Fpre-develop"
+                },
+                {
+                    "name": "Develop",
+                    "raw": "develop"
+                }
+            ]
+        },
+        "om-order-filter": {
+            "branches": [
+                {
+                    "name": "Pre Develop",
+                    "raw": "feature%2Fpre-develop"
+                },
+                {
+                    "name": "Develop",
+                    "raw": "develop"
+                }
+            ]
+        }
+    },
+    "repoBranches": {
+        "om-order-details-app": {
+            "develop": "develop",
+            "feature%2Fpre-develop": "feature/pre-develop",
+            "release%2F04052024": "release/04052024",
+            "release%2F06142024": "release/06142024",
+            "release%2F06282024": "release/06282024",
+            "release%2Fom-order-create": "release/om-order-create",
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+        },
+        "om-order-filter": {
+            "develop": "develop",
+            "feature%2Fpre-develop": "feature/pre-develop",
+            "release%2F04052024": "release/04052024",
+            "release%2F051724": "release/051724",
+            "release%2F06142024": "release/06142024",
+            "release%2Fom-order-create": "release/om-order-create",
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+        },
+        "om-processor": {
+            "develop": "develop",
+            "feature%2Fpre-develop": "feature/pre-develop",
+            "hotfix%2FOM1-release": "hotfix/OM1-release",
+            "hotfix%2Fcode-cleanup": "hotfix/code-cleanup",
+            "hotfix%2Fcount-correction": "hotfix/count-correction",
+            "hotfix%2Flocation-health": "hotfix/location-health",
+            "hotfix%2Fretry": "hotfix/retry",
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+        },
+        "om-team-assignment-customer": {
+            "develop": "develop",
+            "feature%2Fpre-develop": "feature/pre-develop",
+            "release%2Fom-auto-appointments": "release/om-auto-appointments",
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+        },
+        "om-team-assignment-processor": {
+            "develop": "develop",
+            "feature%2Fpre-develop": "feature/pre-develop",
+            "release": "release",
+            "release%2Forder-resync-0301": "release/order-resync-0301",
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+        },
+        "order-management-api": {
+            "develop": "develop",
+            "feature%2Fpre-develop": "feature/pre-develop",
+            "hotfix%2Fappt-user": "hotfix/appt-user",
+            "hotfix%2Fassignment-info-local-store": "hotfix/assignment-info-local-store",
+            "hotfix%2Freq-appt-remarks": "hotfix/req-appt-remarks",
+            "release%2F04052024": "release/04052024",
+            "release%2F05102024": "release/05102024",
+            "release%2F06112024": "release/06112024",
+            "release%2F06142024": "release/06142024",
+            "release%2F06242024": "release/06242024",
+            "release%2Fom-order-create": "release/om-order-create",
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+        },
+        "om-audit-processor": {
+            "develop": "develop",
+            "feature%2Fpre-develop": "feature/pre-develop",
+            "release%2Fom-order-create": "release/om-order-create",
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+        },
+        "om-customs-brokers": {
+            "develop": "develop",
+            "feature%2Fpre-develop": "feature/pre-develop",
+            "release%2F04052024": "release/04052024"
+        },
+        "om-edi-acceptance-processor": {
+            "develop": "develop",
+            "feature%2Fpre-develop": "feature/pre-develop",
+            "hotfix%2Fremove-await-topic": "hotfix/remove-await-topic",
+            "hotfix%2Fremove-time-check": "hotfix/remove-time-check",
+            "release%2F05132024": "release/05132024",
+            "release%2F05142024": "release/05142024",
+            "release%2F06142024": "release/06142024",
+            "release%2F1107-edi-order-create": "release/1107-edi-order-create",
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+        },
+        "om-edi-acknowledgement": {
+            "develop": "develop",
+            "feature%2Fpre-develop": "feature/pre-develop",
+            "release%2F06142024": "release/06142024"
+        },
+        "om-edi-mapping": {
+            "develop": "develop",
+            "feature%2Fpre-develop": "feature/pre-develop",
+            "release%2F04052024": "release/04052024",
+            "release%2F05102024": "release/05102024",
+            "release%2F05142024": "release/05142024",
+            "release%2F05312024": "release/05312024",
+            "release%2F06102024": "release/06102024",
+            "release%2F06142024": "release/06142024",
+            "release%2F06282024": "release/06282024",
+            "release%2F0905-edi-order-create": "release/0905-edi-order-create",
+            "release%2F0919-edi-order-create": "release/0919-edi-order-create",
+            "release%2F1107-edi-order-create": "release/1107-edi-order-create",
+            "release%2FUOM-changes": "release/UOM-changes",
+            "release%2Fintra-company-0329": "release/intra-company-0329",
+            "release%2Fintra-company-0405": "release/intra-company-0405",
+            "release%2Fom-order-create": "release/om-order-create",
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+        },
+        "om-edi-order-ack-processor": {
+            "develop": "develop",
+            "feature%2Fpre-develop": "feature/pre-develop",
+            "release%2F04052024": "release/04052024",
+            "release%2F05102024": "release/05102024",
+            "release%2F05312024": "release/05312024",
+            "release%2F06142024": "release/06142024"
+        },
+        "om-edi-order-processor": {
+            "develop": "develop",
+            "feature%2Fpre-develop": "feature/pre-develop",
+            "release%2F0620-edi-order-create": "release/0620-edi-order-create",
+            "release%2F1107-edi-order-create": "release/1107-edi-order-create",
+            "release%2FICO-7-11-23": "release/ICO-7-11-23",
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126",
+            "release%2Ftech-upgrade-0126-old": "release/tech-upgrade-0126-old"
+        },
+        "om-edi-order": {
+            "develop": "develop",
+            "feature%2Fpre-develop": "feature/pre-develop",
+            "release%2F04052024": "release/04052024",
+            "release%2F04122024": "release/04122024",
+            "release%2F04302024": "release/04302024",
+            "release%2F05172024": "release/05172024",
+            "release%2F05312024": "release/05312024",
+            "release%2F06112024": "release/06112024",
+            "release%2F06142024": "release/06142024",
+            "release%2F06282024": "release/06282024",
+            "release%2F1107-edi-order-create": "release/1107-edi-order-create",
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+        },
+        "om-edi-rule-engine": {
+            "develop": "develop",
+            "feature%2Fpre-develop": "feature/pre-develop",
+            "hotfix%2Facceptance-infinite-loop-fix": "hotfix/acceptance-infinite-loop-fix",
+            "release%2F04052024": "release/04052024",
+            "release%2F04302024": "release/04302024",
+            "release%2F05102024": "release/05102024",
+            "release%2F05312024": "release/05312024",
+            "release%2F0620-edi-order-create": "release/0620-edi-order-create",
+            "release%2F06282024": "release/06282024",
+            "release%2F0905-edi-order-create": "release/0905-edi-order-create",
+            "release%2F0919-edi-order-create": "release/0919-edi-order-create",
+            "release%2F1107-edi-order-create": "release/1107-edi-order-create",
+            "release%2Fintra-company-0329": "release/intra-company-0329",
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+        },
+        "om-edi-rule-processor": {
+            "develop": "develop",
+            "feature%2Fpre-develop": "feature/pre-develop",
+            "release%2F1107-edi-order-create": "release/1107-edi-order-create",
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126",
+            "release%2Ftech-upgrade-0126-old": "release/tech-upgrade-0126-old"
+        },
+        "om-edi-rules": {
+            "develop": "develop",
+            "feature%2Fpre-develop": "feature/pre-develop",
+            "release%2F04052024": "release/04052024",
+            "release%2F06112024": "release/06112024",
+            "release%2F06142024": "release/06142024",
+            "release%2F1107-edi-order-create": "release/1107-edi-order-create",
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+        },
+        "om-edi-settings": {
+            "develop": "develop",
+            "feature%2Fpre-develop": "feature/pre-develop",
+            "release%2F06142024": "release/06142024"
+        },
+        "om-oc-template": {
+            "develop": "develop",
+            "feature%2Fpre-develop": "feature/pre-develop",
+            "release%2F0317-order-create": "release/0317-order-create",
+            "release%2F04052024": "release/04052024",
+            "release%2F0725-order-create": "release/0725-order-create",
+            "release%2F0905-edi-order-create": "release/0905-edi-order-create",
+            "release%2F0919-edi-order-create": "release/0919-edi-order-create",
+            "release%2F1104-order-create": "release/1104-order-create",
+            "release%2F1107-edi-order-create": "release/1107-edi-order-create",
+            "release%2F1209-order-create": "release/1209-order-create",
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+        },
+        "om-order-create-processor": {
+            "develop": "develop",
+            "feature%2Fpre-develop": "feature/pre-develop",
+            "release%2F06142024": "release/06142024",
+            "release%2F1104-order-create": "release/1104-order-create",
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+        },
+        "om-order-create": {
+            "develop": "develop",
+            "feature%2Fpre-develop": "feature/pre-develop",
+            "hotfix%2Flocation-xref": "hotfix/location-xref",
+            "release%2F04052024": "release/04052024",
+            "release%2F05102024": "release/05102024",
+            "release%2F05142023": "release/05142023",
+            "release%2F05142024": "release/05142024",
+            "release%2F05172024": "release/05172024",
+            "release%2F05312024": "release/05312024",
+            "release%2F06112024": "release/06112024",
+            "release%2F06142024": "release/06142024",
+            "release%2F0807-edi-order-create": "release/0807-edi-order-create",
+            "release%2F0905-edi-order-create": "release/0905-edi-order-create",
+            "release%2F0919-edi-order-create": "release/0919-edi-order-create",
+            "release%2F1107-edi-order-create": "release/1107-edi-order-create",
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+        },
+        "om-order-entry-app": {
+            "develop": "develop",
+            "feature%2Fpre-develop": "feature/pre-develop",
+            "release%2F04052024": "release/04052024",
+            "release%2F04122024": "release/04122024",
+            "release%2F05102024": "release/05102024",
+            "release%2F05312024": "release/05312024",
+            "release%2F06112024": "release/06112024",
+            "release%2F06142024": "release/06142024",
+            "release%2F0620-edi-order-create": "release/0620-edi-order-create",
+            "release%2F06282024": "release/06282024",
+            "release%2F0725-order-create": "release/0725-order-create",
+            "release%2F0807-edi-order-create": "release/0807-edi-order-create",
+            "release%2F0905-edi-order-create": "release/0905-edi-order-create",
+            "release%2F0919-edi-order-create": "release/0919-edi-order-create",
+            "release%2F1107-edi-order-create": "release/1107-edi-order-create",
+            "release%2F1129-order-create": "release/1129-order-create",
+            "release%2F1209-order-create": "release/1209-order-create",
+            "release%2Fintra-company-0405": "release/intra-company-0405",
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+        },
+        "om-order-processor": {
+            "develop": "develop",
+            "feature%2Fpre-develop": "feature/pre-develop",
+            "release%2F06142024": "release/06142024",
+            "release%2Fom-legacy-app": "release/om-legacy-app",
+            "release%2Fom-order-create": "release/om-order-create",
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+        },
+        "om-order": {
+            "develop": "develop",
+            "feature%2Fpre-develop": "feature/pre-develop",
+            "hotfix%2Fauto-update-retrigger-fix": "hotfix/auto-update-retrigger-fix",
+            "hotfix%2Fimmediate-accept-fix": "hotfix/immediate-accept-fix",
+            "hotfix%2Fjune-2-release": "hotfix/june-2-release",
+            "hotfix%2Fneed-delivery-appt": "hotfix/need-delivery-appt",
+            "hotfix%2Freset-customs-datetime": "hotfix/reset-customs-datetime",
+            "hotfix%2Ftemp-internal-alarms-reset-issue": "hotfix/temp-internal-alarms-reset-issue",
+            "hotfix%2Fupdate-to-all-references": "hotfix/update-to-all-references",
+            "hotfix%2Fwebsite-name-getting-deleted": "hotfix/website-name-getting-deleted",
+            "release%2F04052024": "release/04052024",
+            "release%2F05142024": "release/05142024",
+            "release%2F05172024": "release/05172024",
+            "release%2F05312024": "release/05312024",
+            "release%2F06112024": "release/06112024",
+            "release%2F06142014": "release/06142014",
+            "release%2F06142024": "release/06142024",
+            "release%2F06212024": "release/06212024",
+            "release%2Fom-order-create": "release/om-order-create",
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+        },
+        "order-actions-addin": {
+            "develop": "develop",
+            "feature%2Fpre-develop": "feature/pre-develop",
+            "hotfix%2Fauthurl": "hotfix/authurl",
+            "hotfix%2Fprod": "hotfix/prod",
+            "release%2Fom-order-create": "release/om-order-create",
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+        },
+        "om-app": {
+            "develop": "develop",
+            "feature%2Fpre-develop": "feature/pre-develop",
+            "hotfix%2Fenable-track-and-trace": "hotfix/enable-track-and-trace",
+            "release%2F04052024": "release/04052024",
+            "release%2F051724": "release/051724",
+            "release%2F06112024": "release/06112024",
+            "release%2F06142024": "release/06142024",
+            "release%2Fom-order-create": "release/om-order-create",
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+        },
+        "om-maintenance-app": {
+            "develop": "develop",
+            "feature%2Fpre-develop": "feature/pre-develop",
+            "hotfix%2Fcommodity-code-fix-release": "hotfix/commodity-code-fix-release",
+            "release%2F04052024": "release/04052024",
+            "release%2F05102024": "release/05102024",
+            "release%2F051724": "release/051724",
+            "release%2F05312024": "release/05312024",
+            "release%2F06112024": "release/06112024",
+            "release%2F06142024": "release/06142024",
+            "release%2F06282024": "release/06282024",
+            "release%2Fom-order-create": "release/om-order-create",
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+        }
+    }
+}
