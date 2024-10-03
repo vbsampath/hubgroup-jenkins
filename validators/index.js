@@ -5,9 +5,33 @@ const regexStrings = {
     tag: /[A-F0-9]{6}/,
     deployment: /-v[0-9]/
 };
+const facades = [
+    "brokerageportal",
+    "brokerageworkbench",
+    "carrierportal",
+    "cczportal",
+    "documentapp",
+    "elevatedriver",
+    "equipmentportal",
+    "highlander",
+    "hubconnectportal",
+    "hubprosupport",
+    "invoicingservice",
+    "location",
+    "messagingportal",
+    "microservicesexternal",
+    "omapp",
+    "opsworkbench",
+    "poolmanagement",
+    "soa"
+];
 
 const environment = (environment) => {
     if (!_.includes(['dev', 'qa', 'ua'], environment)) return "Environment should be dev, qa, ua";
+    return true;
+}
+const facade = (facade) => {
+    if (!_.includes(facades, facade)) return "Facade should be valid";
     return true;
 }
 const tag = (tag) => {
@@ -36,5 +60,6 @@ export {
     environment,
     tag,
     services,
-    deployment
+    deployment,
+    facade
 }

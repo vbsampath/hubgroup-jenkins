@@ -25,7 +25,9 @@ let urls = {
     jobConsoleText: "job/{pipeLineName}/job/{branchName}/{jobNumber}/consoleText",
     listDeployments: "job/{pipeLineName}/buildWithParameters?",
     buildFromQueue: "job/{pipeLineName}/api/json?tree=builds[id,number,result,queueId]",
-    promotions: "job/{pipeLineName}/buildWithParameters?"
+    promotions: "job/{pipeLineName}/buildWithParameters?",
+    restart: "job/{pipeLineName}/buildWithParameters?",
+    facade: "job/{pipeLineName}/buildWithParameters?"
 };
 let errorsToConsider = [
     ".*?ERROR:.*?",
@@ -151,6 +153,28 @@ async function promotions(config, pipeLineName, promotionsInputs, isBulk) {
     // console.log(promotionsResponse);
     if (promotionsResponse.status === 201) {
         console.log(chalk.green.bold((isBulk) ? 'Bulk Promoted': 'Promoted'));
+    }
+}
+
+async function restart(config, pipeLineName, restartInputs) {
+    let query = new URLSearchParams(restartInputs);
+    let restartUrl = urls.restart.replace("{pipeLineName}", pipeLineName) + query;
+    // console.log(restartUrl);
+    let restartResponse = await web.makeRequest(restartUrl, "POST", config, false);
+    // console.log(restartResponse);
+    if (restartResponse.status === 201) {
+        console.log(chalk.green.bold('Restarted'));
+    }
+}
+
+async function facade(config, pipeLineName, facadeInputs) {
+    let query = new URLSearchParams(facadeInputs);
+    let facadeUrl = urls.facade.replace("{pipeLineName}", pipeLineName) + query;
+    // console.log(facadeUrl);
+    let facadeResponse = await web.makeRequest(facadeUrl, "POST", config, false);
+    // // console.log(facadeResponse);
+    if (facadeResponse.status === 201) {
+        console.log(chalk.green.bold('Facade Manifests Updated'));
     }
 }
 
@@ -319,6 +343,12 @@ async function handleRunActions(runActions = ['Get Runs', 'Get Errors', 'Get Con
     } else if (runOption === 'Bulk Promotions') {
         let bulkPromotionsInputs = await prompts.bulkPromotions();
         promotions(config, pipeLineName, bulkPromotionsInputs, true)
+    } else if (runOption === 'Restart Deployment') {
+        let restartInputs = await prompts.restart();
+        restart(config, pipeLineName, restartInputs);
+    } else if (runOption === 'Facade Manifests') {
+        let facadeInputs = await prompts.facade();
+        facade(config, pipeLineName, facadeInputs);
     } else if (runOption === 'List Deployments') {
         let listDeploymentsInputs = await prompts.listDeployments();
         getListDeployments(config, pipeLineName, listDeploymentsInputs);
@@ -442,6 +472,14 @@ try {
         } else if (pipeLineName === 'OpenShift-List-Deployments') {
             runActions.splice(3, 0, "List Deployments");
             defaultForRun = "List Deployments";
+            handleRunActions(runActions, defaultForRun);
+        } else if (pipeLineName === 'OpenShift-Restart-Deployment') {
+            runActions.splice(3, 0, "Restart Deployment");
+            defaultForRun = "Restart Deployment";
+            handleRunActions(runActions, defaultForRun);
+        } else if (pipeLineName === 'OpenShift-Facade-Manifests') {
+            runActions.splice(3, 0, "Facade Manifests");
+            defaultForRun = "Facade Manifests";
             handleRunActions(runActions, defaultForRun);
         } else if (pipeLineName === 'bulk-tags') {
             await getBulkTags(config, config.bulkTags);

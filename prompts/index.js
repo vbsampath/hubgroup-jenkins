@@ -50,8 +50,44 @@ async function takeListDeploymentsInputs() {
     return listDeploymentsAnswer;
 }
 
+async function takeRestartDeploymentInputs() {
+    try {
+        const restartAnswer = await inquirer.prompt([
+            { type: 'input', name: 'ENVIRONMENT', message: 'Input Environment (dev, qa, ua): ',
+                validate: (ENVIRONMENT) => validators.environment(ENVIRONMENT)
+            },
+            { type: 'input', name: 'DEPLOYMENTS', message: 'Input Deployments (om-order-v1-0):',
+                validate: (DEPLOYMENTS) => validators.deployment(DEPLOYMENTS)
+            }
+        ]);
+        restartAnswer.NAMESPACE = "production";
+        restartAnswer.TIMEOUT = "5m";
+        return restartAnswer;
+    } catch (error) {
+        console.log(chalk.red(error));
+    }
+}
+
+async function takeFacadeManifestsInputs() {
+    try {
+        const facadeAnswer = await inquirer.prompt([
+            { type: 'input', name: 'ENVIRONMENT', message: 'Input Environment (dev, qa, ua): ',
+                validate: (ENVIRONMENT) => validators.environment(ENVIRONMENT)
+            },
+            { type: 'input', name: 'FACADE_NAME', message: 'Facade Name (omapp, soa): ',
+                validate: (FACADE_NAME) => validators.facade(FACADE_NAME)
+            }
+        ]);
+        return facadeAnswer;
+    } catch (error) {
+        console.log(chalk.red(error));
+    }
+}
+
 export {
     takePromotionsInputs as promotions,
     takeBulkPromotionsInputs as bulkPromotions,
-    takeListDeploymentsInputs as listDeployments
+    takeListDeploymentsInputs as listDeployments,
+    takeRestartDeploymentInputs as restart,
+    takeFacadeManifestsInputs as facade
 }
