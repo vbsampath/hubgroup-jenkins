@@ -20,6 +20,8 @@
         "OpenShift-Promotions",
         "OpenShift-Bulk-Promotions",
         "OpenShift-List-Deployments",
+        "OpenShift-Restart-Deployment",
+        "OpenShift-Facade-Manifests",
         "bulk-tags",
         "update-repo-branches",
         "run-previous-job",
