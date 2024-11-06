@@ -8,10 +8,10 @@
         "crumb": ""
     },
     "previousJobRun": {
-        "pipeLineName": "OrderManagement1_om-order-details-app_Multibranch_Pipeline_OpenShift",
-        "repoName": "om-order-details-app",
-        "branchName": "feature/pre-develop",
-        "branchOption": "feature%2Fpre-develop"
+        "pipeLineName": "OrderManagement2_om-order-entry-app_Multibranch_Pipeline_OpenShift",
+        "repoName": "om-order-entry-app",
+        "branchName": "develop",
+        "branchOption": "develop"
     },
     "excludePipeLinesForCommits": [
         "OpenShift-List-Deployments"
@@ -125,6 +125,10 @@
             "repo": "om-order"
         },
         {
+            "name": "EventServices_event-processor_Multibranch_Pipeline_OpenShift",
+            "repo": "event-processor"
+        },
+        {
             "name": "OrderManagement2_order-actions-addin_Multibranch_Pipeline_OpenShift",
             "repo": "order-actions-addin"
         },
@@ -215,7 +219,8 @@
             "release%2F09202024": "release/09202024",
             "release%2F10012024": "release/10012024",
             "release%2Fom-order-create": "release/om-order-create",
-            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126",
+            "release%2Fyana-v1": "release/yana-v1"
         },
         "om-order-filter": {
             "develop": "develop",
@@ -224,7 +229,8 @@
             "release%2F051724": "release/051724",
             "release%2F06142024": "release/06142024",
             "release%2Fom-order-create": "release/om-order-create",
-            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126",
+            "release%2Fyana-v1": "release/yana-v1"
         },
         "om-processor": {
             "develop": "develop",
@@ -256,22 +262,22 @@
             "hotfix%2Fassignment-info-local-store": "hotfix/assignment-info-local-store",
             "hotfix%2Freq-appt-remarks": "hotfix/req-appt-remarks",
             "release%2F04052024": "release/04052024",
-            "release%2F05102024": "release/05102024",
-            "release%2F06112024": "release/06112024",
             "release%2F06142024": "release/06142024",
-            "release%2F06242024": "release/06242024",
-            "release%2F08092024": "release/08092024",
             "release%2F08302024": "release/08302024",
             "release%2Fom-order-create": "release/om-order-create",
-            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+            "release%2Fpre-yana": "release/pre-yana",
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126",
+            "release%2Fyana-v1": "release/yana-v1"
         },
         "om-audit-processor": {
             "develop": "develop",
             "feature%2Fpre-develop": "feature/pre-develop",
             "release%2F08302024": "release/08302024",
             "release%2F09202024": "release/09202024",
+            "release%2F10012024": "release/10012024",
             "release%2Fom-order-create": "release/om-order-create",
-            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126",
+            "release%2Fyana-v1": "release/yana-v1"
         },
         "om-customs-brokers": {
             "develop": "develop",
@@ -287,7 +293,8 @@
             "release%2F05142024": "release/05142024",
             "release%2F06142024": "release/06142024",
             "release%2F1107-edi-order-create": "release/1107-edi-order-create",
-            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126",
+            "release%2Fyana-v1": "release/yana-v1"
         },
         "om-edi-acknowledgement": {
             "develop": "develop",
@@ -305,8 +312,6 @@
             "release%2F04052024": "release/04052024",
             "release%2F05102024": "release/05102024",
             "release%2F05142024": "release/05142024",
-            "release%2F05312024": "release/05312024",
-            "release%2F06102024": "release/06102024",
             "release%2F06142024": "release/06142024",
             "release%2F06282024": "release/06282024",
             "release%2F07192024": "release/07192024",
@@ -319,10 +324,10 @@
             "release%2F09202024": "release/09202024",
             "release%2F1107-edi-order-create": "release/1107-edi-order-create",
             "release%2FUOM-changes": "release/UOM-changes",
-            "release%2Fintra-company-0329": "release/intra-company-0329",
             "release%2Fintra-company-0405": "release/intra-company-0405",
             "release%2Fom-order-create": "release/om-order-create",
-            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126",
+            "release%2Fyana-v1": "release/yana-v1"
         },
         "om-edi-order-ack-processor": {
             "develop": "develop",
@@ -338,7 +343,9 @@
             "release%2F08062024": "release/08062024",
             "release%2F09032024": "release/09032024",
             "release%2F09112024": "release/09112024",
-            "release%2F091124": "release/091124"
+            "release%2F091124": "release/091124",
+            "release%2Fpre-yana": "release/pre-yana",
+            "release%2Fyana-v1": "release/yana-v1"
         },
         "om-edi-order-processor": {
             "develop": "develop",
@@ -354,6 +361,7 @@
             "feature%2Fpre-develop": "feature/pre-develop",
             "hotfix%2F09112024": "hotfix/09112024",
             "hotfix%2F990-tba-fix": "hotfix/990-tba-fix",
+            "hotfix%2Fedi-pricing-call-fix": "hotfix/edi-pricing-call-fix",
             "hotfix%2Fkroger-990-fix": "hotfix/kroger-990-fix",
             "release%2F04052024": "release/04052024",
             "release%2F04122024": "release/04122024",
@@ -368,8 +376,11 @@
             "release%2F08202024": "release/08202024",
             "release%2F08302024": "release/08302024",
             "release%2F09032024": "release/09032024",
+            "release%2F09272024": "release/09272024",
+            "release%2F10012024": "release/10012024",
             "release%2F1107-edi-order-create": "release/1107-edi-order-create",
-            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126",
+            "release%2Fyana-v1": "release/yana-v1"
         },
         "om-edi-rule-engine": {
             "develop": "develop",
@@ -396,7 +407,8 @@
             "release%2F0919-edi-order-create": "release/0919-edi-order-create",
             "release%2F1107-edi-order-create": "release/1107-edi-order-create",
             "release%2Fintra-company-0329": "release/intra-company-0329",
-            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126",
+            "release%2Fyana-v1": "release/yana-v1"
         },
         "om-edi-rule-processor": {
             "develop": "develop",
@@ -419,12 +431,15 @@
         "om-edi-settings": {
             "develop": "develop",
             "feature%2Fpre-develop": "feature/pre-develop",
+            "hotfix%2F09272024": "hotfix/09272024",
             "hotfix%2Fedi-create-issue": "hotfix/edi-create-issue",
             "hotfix%2Fpp-grid-issue-0917": "hotfix/pp-grid-issue-0917",
             "release%2F06142024": "release/06142024",
             "release%2F07192024": "release/07192024",
             "release%2F08092024": "release/08092024",
-            "release%2F08302024": "release/08302024"
+            "release%2F08302024": "release/08302024",
+            "release%2F10012024": "release/10012024",
+            "release%2Fyana-v1": "release/yana-v1"
         },
         "om-oc-template": {
             "develop": "develop",
@@ -440,18 +455,22 @@
             "release%2F1104-order-create": "release/1104-order-create",
             "release%2F1107-edi-order-create": "release/1107-edi-order-create",
             "release%2F1209-order-create": "release/1209-order-create",
-            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126",
+            "release%2Fyana-v1": "release/yana-v1"
         },
         "om-order-create-processor": {
             "develop": "develop",
             "feature%2Fpre-develop": "feature/pre-develop",
             "release%2F06142024": "release/06142024",
+            "release%2F10012024": "release/10012024",
             "release%2F1104-order-create": "release/1104-order-create",
-            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126",
+            "release%2Fyana-v1": "release/yana-v1"
         },
         "om-order-create": {
             "develop": "develop",
             "feature%2Fpre-develop": "feature/pre-develop",
+            "hotfix%2Fduplicate-events-fix": "hotfix/duplicate-events-fix",
             "hotfix%2FequipmentId-ignore-missing-user-activity": "hotfix/equipmentId-ignore-missing-user-activity",
             "hotfix%2Flocation-xref": "hotfix/location-xref",
             "release%2F04052024": "release/04052024",
@@ -460,10 +479,6 @@
             "release%2F05172024": "release/05172024",
             "release%2F06112024": "release/06112024",
             "release%2F06142024": "release/06142024",
-            "release%2F07192024": "release/07192024",
-            "release%2F07192024-1": "release/07192024-1",
-            "release%2F07192024-new": "release/07192024-new",
-            "release%2F07192024-test": "release/07192024-test",
             "release%2F07192024-v2": "release/07192024-v2",
             "release%2F0807-edi-order-create": "release/0807-edi-order-create",
             "release%2F08302024": "release/08302024",
@@ -471,16 +486,19 @@
             "release%2F0905-edi-order-create": "release/0905-edi-order-create",
             "release%2F0919-edi-order-create": "release/0919-edi-order-create",
             "release%2F09202024": "release/09202024",
+            "release%2F10012024": "release/10012024",
             "release%2F1107-edi-order-create": "release/1107-edi-order-create",
+            "release%2Fpre-yana": "release/pre-yana",
             "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126",
-            "release%2Ftest1": "release/test1",
-            "release%2Ftest2": "release/test2",
             "release%2Ftest3": "release/test3",
-            "release%2Ftest4": "release/test4"
+            "release%2Fyana-v1": "release/yana-v1"
         },
         "om-order-entry-app": {
             "develop": "develop",
             "feature%2Fpre-develop": "feature/pre-develop",
+            "hotfix%2Fcustomer-object-grid-issue-develop-PR": "hotfix/customer-object-grid-issue-develop-PR",
+            "hotfix%2Fempty-customer-object-fix": "hotfix/empty-customer-object-fix",
+            "hotfix%2Fview-changes-price-fix": "hotfix/view-changes-price-fix",
             "release%2F04052024": "release/04052024",
             "release%2F04122024": "release/04122024",
             "release%2F05102024": "release/05102024",
@@ -503,28 +521,32 @@
             "release%2F09202024": "release/09202024",
             "release%2F09202024-1": "release/09202024-1",
             "release%2F09202024-2": "release/09202024-2",
+            "release%2F09272024": "release/09272024",
             "release%2F10012024": "release/10012024",
+            "release%2F10042024": "release/10042024",
             "release%2F1107-edi-order-create": "release/1107-edi-order-create",
             "release%2F1129-order-create": "release/1129-order-create",
             "release%2F1209-order-create": "release/1209-order-create",
             "release%2Fintra-company-0405": "release/intra-company-0405",
-            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+            "release%2Fpre-yana": "release/pre-yana",
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126",
+            "release%2Fyana-v1": "release/yana-v1"
         },
         "om-order-processor": {
             "develop": "develop",
             "feature%2Fpre-develop": "feature/pre-develop",
             "release%2F06142024": "release/06142024",
+            "release%2F10012024": "release/10012024",
             "release%2Fom-legacy-app": "release/om-legacy-app",
             "release%2Fom-order-create": "release/om-order-create",
-            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126",
+            "release%2Fyana-v1": "release/yana-v1"
         },
         "om-order": {
             "develop": "develop",
             "feature%2Fpre-develop": "feature/pre-develop",
             "hotfix%2F990-tba-accept": "hotfix/990-tba-accept",
-            "hotfix%2Fauto-update-retrigger-fix": "hotfix/auto-update-retrigger-fix",
             "hotfix%2Fequipment-type-issue": "hotfix/equipment-type-issue",
-            "hotfix%2Fimmediate-accept-fix": "hotfix/immediate-accept-fix",
             "hotfix%2Fjune-2-release": "hotfix/june-2-release",
             "hotfix%2Fneed-delivery-appt": "hotfix/need-delivery-appt",
             "hotfix%2Freset-customs-datetime": "hotfix/reset-customs-datetime",
@@ -534,9 +556,7 @@
             "release%2F04052024": "release/04052024",
             "release%2F05142024": "release/05142024",
             "release%2F05172024": "release/05172024",
-            "release%2F05312024": "release/05312024",
             "release%2F06112024": "release/06112024",
-            "release%2F06142014": "release/06142014",
             "release%2F06142024": "release/06142024",
             "release%2F06212024": "release/06212024",
             "release%2F07192024": "release/07192024",
@@ -545,8 +565,43 @@
             "release%2F08202024": "release/08202024",
             "release%2F08302024": "release/08302024",
             "release%2F09202024": "release/09202024",
+            "release%2F09272024": "release/09272024",
+            "release%2F10012024": "release/10012024",
             "release%2Fom-order-create": "release/om-order-create",
-            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+            "release%2Fpre-yana": "release/pre-yana",
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126",
+            "release%2Fyana-v1": "release/yana-v1"
+        },
+        "event-processor": {
+            "develop": "develop",
+            "feature%2Fpre-develop": "feature/pre-develop",
+            "hotfix%2Fapril-28-23_2": "hotfix/april-28-23_2",
+            "hotfix%2Fconfig-print": "hotfix/config-print",
+            "hotfix%2Fequipment-order-stops-validation-issue": "hotfix/equipment-order-stops-validation-issue",
+            "hotfix%2Finclude-equipment-commercial-status": "hotfix/include-equipment-commercial-status",
+            "hotfix%2Flog-temp-eqp-error": "hotfix/log-temp-eqp-error",
+            "hotfix%2Fmay-16-23": "hotfix/may-16-23",
+            "hotfix%2Fopenshift": "hotfix/openshift",
+            "hotfix%2Fqa-202309": "hotfix/qa-202309",
+            "hotfix%2Ftc-sp1": "hotfix/tc-sp1",
+            "hotfix%2Fua-lint-issues": "hotfix/ua-lint-issues",
+            "hotfix%2Fupdate-current-ramp-market-by-event": "hotfix/update-current-ramp-market-by-event",
+            "release%2F051724": "release/051724",
+            "release%2F06142024": "release/06142024",
+            "release%2Fapril-04-23": "release/april-04-23",
+            "release%2Fapril-28-23_2": "release/april-28-23_2",
+            "release%2Fbranch-fixes-0126": "release/branch-fixes-0126",
+            "release%2Fdgassociation-flag": "release/dgassociation-flag",
+            "release%2Fjune-02-23": "release/june-02-23",
+            "release%2Fjune-29": "release/june-29",
+            "release%2Fmarch-10-23": "release/march-10-23",
+            "release%2Fmay-05-23": "release/may-05-23",
+            "release%2Fnov-17-23": "release/nov-17-23",
+            "release%2Fpre-yana": "release/pre-yana",
+            "release%2Fsep-06": "release/sep-06",
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126",
+            "release%2Fua-sql-pool-issue": "release/ua-sql-pool-issue",
+            "release%2Fyana-v1": "release/yana-v1"
         },
         "order-actions-addin": {
             "develop": "develop",
@@ -565,7 +620,8 @@
             "release%2F06112024": "release/06112024",
             "release%2F06142024": "release/06142024",
             "release%2Fom-order-create": "release/om-order-create",
-            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126",
+            "release%2Fyana-v1": "release/yana-v1"
         },
         "om-maintenance-app": {
             "develop": "develop",
@@ -584,7 +640,10 @@
             "release%2F08302024": "release/08302024",
             "release%2F09172024": "release/09172024",
             "release%2Fom-order-create": "release/om-order-create",
-            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126"
+            "release%2Fpre-yana": "release/pre-yana",
+            "release%2Fpre-yana-1": "release/pre-yana-1",
+            "release%2Ftech-upgrade-0126": "release/tech-upgrade-0126",
+            "release%2Fyana-v1": "release/yana-v1"
         }
     }
 }
